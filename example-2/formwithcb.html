@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>An HTML form with checkboxes</title>
+</head>
+<body>
+    <form method="post" action="send_formwithcb.php">
+        <p>
+            <label for="user">Name:</label><br>
+            <input type="text" id="user" name="user">
+        </p>
+
+        <fieldset>
+            <legend>Select Some Products:</legend><br>
+            <!-- 名字以一个方括号结束（products[]），PHP 会把这个字段的用户输入编译到一个数组中。 -->
+            <input type="checkbox" id="tricorder" name="products[]" value="Tricorder">
+            <label for="tricorder">Tricorder</label><br>
+
+            <input type="checkbox" id="orac_ai" name="products[]" value="ORAC AI">
+            <label for="orac_ai">ORAC AI</label><br>
+
+            <input type="checkbox" id="hal_2000" name="products[]" value="HAL 2000">
+            <label for="hal_2000">HAL 2000</label><br>
+        </fieldset>
+
+        <button type="submit" name="submit" value="submit">Submit Form</button>
+    </form>
+</body>
+</html>
