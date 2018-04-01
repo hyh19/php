@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# 测试环境：Centos 7.4
+
 yum install -y libxml2-devel
 yum group install -y 'Development Tools' && yum install -y wget vim
 
